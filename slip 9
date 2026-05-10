@@ -1,5 +1,37 @@
 using System;
 
+class Program
+{
+    static int CountChar(string s, char ch)
+    {
+        int count = 0;
+
+        foreach (char c in s)
+        {
+            if (c == ch)
+                count++;
+        }
+
+        return count;
+    }
+
+    static void Main()
+    {
+        Console.Write("Enter String: ");
+        string s = Console.ReadLine();
+
+        Console.Write("Enter Character: ");
+        char ch = Convert.ToChar(Console.ReadLine());
+
+        Console.WriteLine("Occurrences: " + CountChar(s, ch));
+    }
+}
+
+
+
+Q2
+using System;
+
 class Person
 {
     public string name;
