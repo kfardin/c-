@@ -1,0 +1,10 @@
+rediobutton-4
+lable-1,button-1
+
+button code
+{
+  if(radioButton1.checked)
+    lable.text="Selected Flower:Lotus";
+  else if(radioButton2.Checked)
+    same as
+}
