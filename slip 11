@@ -1,0 +1,43 @@
+using System;
+
+interface Gross
+{
+    void Gross_sal();
+}
+
+class Employee
+{
+    public string name;
+    public int basic_sal;
+}
+
+class Salary : Employee, Gross
+{
+    int HRA, TA, DA, total;
+
+    public void Gross_sal()
+    {
+        Console.Write("Enter Name: ");
+        name = Console.ReadLine();
+
+        Console.Write("Enter Basic Salary: ");
+        basic_sal = Convert.ToInt32(Console.ReadLine());
+
+        HRA = 1000;
+        TA = 500;
+        DA = 800;
+
+        total = basic_sal + HRA + TA + DA;
+
+        Console.WriteLine("Gross Salary: " + total);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Salary s = new Salary();
+        s.Gross_sal();
+    }
+}
