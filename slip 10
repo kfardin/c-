@@ -1,0 +1,17 @@
+textbox-1,button-1,lable-1
+button code
+{
+  int n,rev=0,rem,temp;
+  n=int.Parse(textBox.Text);
+  temp=n;
+  while(n>0)
+  {
+    rem=n%10;
+    rev=rev*10+rem;
+    n=n/10;
+  }
+  if(temp=rev)
+    lable1.Text="Palindrom Number";
+  else
+    lable.Text="Not";
+}
