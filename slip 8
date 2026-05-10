@@ -1,0 +1,9 @@
+create database College;
+use College;
+create table Student(rollno int,name varchar(50),per float);
+insert into Student(1,"xyz",95);
+
+1.select * from Student
+2.delete from Student where per <40;
+3.select name from Student where per >90;
+4.select name from Student where name like 'k%';
