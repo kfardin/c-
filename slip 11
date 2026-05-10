@@ -1,3 +1,18 @@
+Slip 11 Q1
+Stack s = new Stack();
+
+        s.Push(10);
+        s.Push(20);
+        s.Push(30);
+
+        Console.WriteLine("Top = " + s.Peek());
+
+        object[] a = s.ToArray();
+        Console.WriteLine("Bottom = " + a[a.Length - 1]);
+
+
+
+Q2
 using System;
 
 interface Gross
