@@ -1,0 +1,22 @@
+using System;
+using System.Collections;
+class Program
+{
+    static void Main()
+    {
+        Stack s = new Stack();
+
+        s.Push(10);
+        s.Push(20);
+        s.Push(30);
+
+        Console.WriteLine("Top: " + s.Peek());
+
+        Console.WriteLine("Pop: " + s.Pop());
+
+        if (s.Count == 0)
+            Console.WriteLine("Stack is Empty");
+        else
+            Console.WriteLine("Stack is Not Empty");
+    }
+}
