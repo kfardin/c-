@@ -1,4 +1,14 @@
+Slip 12 Q1
+n,first,last
+ last = n % 10;
 
+        while (n >= 10)
+            n /= 10;
+
+        first = n;
+
+
+Q2
 lable-3,textbox-2,button-3,checkbox-3,colorDailog-1
 button show 
 private void button1_Click(object sender, EventArgs e)
