@@ -1,0 +1,20 @@
+listBox-1
+button-1
+
+public form code
+{
+  listBox1.Items.Add("Red");
+  listBox1.Items.Add("Green");
+  listBox1.Items.Add("Blue");
+}
+
+button code->
+{
+    String Color=listBox.SelectedItem.ToString();
+    if(Color=="Red")
+      this.BackColor=Color.red;
+    else if(Color=="Green")
+      this.BackColor=Color.Green;
+    if(Color=="Blue")
+      this.BackColor=Color.Blue;  
+}
