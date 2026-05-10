@@ -1,0 +1,66 @@
+using System;
+
+class Person
+{
+    public string name;
+    public string birthdate;
+
+    public Person(string n, string b)
+    {
+        name = n;
+        birthdate = b;
+    }
+
+    public virtual void Print()
+    {
+        Console.WriteLine("Name: " + name);
+        Console.WriteLine("Birthdate: " + birthdate);
+    }
+}
+
+class Student : Person
+{
+    public string course;
+
+    public Student(string n, string b, string c) : base(n, b)
+    {
+        course = c;
+    }
+
+    public override void Print()
+    {
+        base.Print();
+        Console.WriteLine("Course: " + course);
+    }
+}
+
+class Instructor : Person
+{
+    public int salary;
+
+    public Instructor(string n, string b, int s) : base(n, b)
+    {
+        salary = s;
+    }
+
+    public override void Print()
+    {
+        base.Print();
+        Console.WriteLine("Salary: " + salary);
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Student s = new Student("Yash", "10-01-2005", "BCA");
+        Instructor i = new Instructor("Kunal", "15-02-1990", 50000);
+
+        Console.WriteLine("Student Details:");
+        s.Print();
+
+        Console.WriteLine("\nInstructor Details:");
+        i.Print();
+    }
+}
