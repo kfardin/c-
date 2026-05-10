@@ -1,3 +1,12 @@
+slip 8 Q1
+int[] a = { 10, 5, 25, 3, 40 };
+int mix = a[0];
+ for (int i = 1; i < a.Length; i++)
+        {
+            if (a[i] > min)
+                min = a[i];
+
+Q2
 create database College;
 use College;
 create table Student(rollno int,name varchar(50),per float);
